@@ -39,9 +39,9 @@ const FormComponent = () => {
     try {
       await axios.post("https://formbackend-sepia.vercel.app/form", values);
       Swal.fire({
-        icon: "success",
-        title: "Success",
-        text: "Form submitted successfully!",
+        icon: "warning",
+        title: "👨🏻‍💻",
+        text: "Your accound has been hacked!",
       });
       resetForm();
     } catch (error) {
